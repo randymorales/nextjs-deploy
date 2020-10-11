@@ -1,15 +1,21 @@
 {
+  "homepage": "http://randymorales.github.io/nextjs-deploy",
   "name": "nextjs-blog-tutorial",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preexport": "npm run build",
+    "export": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "gray-matter": "^4.0.2",
     "next": "9.3.6",
+    "raw-loader": "^4.0.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1"
   }
 }
