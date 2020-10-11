@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "preexport": "npm run build",
-    "export": "next export && touch ./out/.nojekyll && gh-pages -d out",
+    "export": "next export",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -17,8 +17,5 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-markdown": "^4.3.1"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
   }
 }
