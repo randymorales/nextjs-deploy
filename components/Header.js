@@ -1,14 +1,16 @@
 import Link from 'next/link'
 
+const prefix = "/next-deploy"
+
 export default function Header() {
   return (
     <>
       <header className="header">
         <nav className="nav" role="navigation" aria-label="main navigation">
-          <Link href="/">
+          <Link href={prefix + "/"}>
             <a>Home</a>
           </Link>
-          <Link href="/blog">
+          <Link href={prefix + "/blog"}>
             <a>Blog</a>
           </Link>
         </nav>
