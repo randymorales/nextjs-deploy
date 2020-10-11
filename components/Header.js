@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const prefix = "/nextjs-deploy"
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ""
 
 export default function Header() {
   return (
