@@ -7,4 +7,6 @@ module.exports = {
         })
         return config
     },
+    basePath: "/nextjs-deploy",
+    assetPrefix: "/nextjs-deploy"
 }
