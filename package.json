@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "preexport": "npm run build",
-    "export": "gh-pages -d out && touch ./out/.nojekyll",
+    "export": "touch ./out/.nojekyll && gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

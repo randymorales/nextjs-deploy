@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <header className="header">
         <nav className="nav" role="navigation" aria-label="main navigation">
-          <Link href={prefix + "/"}>
+          <Link href={prefix}>
             <a>Home</a>
           </Link>
           <Link href={prefix + "/blog"}>
