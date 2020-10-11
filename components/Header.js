@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const prefix = "/next-deploy"
+const prefix = "/nextjs-deploy"
 
 export default function Header() {
   return (
