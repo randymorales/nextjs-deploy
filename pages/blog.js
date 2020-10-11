@@ -6,7 +6,7 @@ import getPosts from '../utils/getPosts'
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <>
-      <Layout pageTitle={title | "Blog"} description={description}>
+      <Layout pageTitle={`${title}` + "Blog"} description={description}>
         <h1 className="title">Welcome to this demo blog!</h1>
 
         <p className="description">
