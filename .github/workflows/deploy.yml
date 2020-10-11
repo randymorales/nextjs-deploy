@@ -24,12 +24,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    
+
     - run: npm ci
     - run: npm run build
     - run: npm run export
     - run: npm test
-      
+    - run: touch ./out/.nojekyll
+
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.6.2
       with:
